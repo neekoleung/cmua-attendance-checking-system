@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b52b36;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cmu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="adminbtn" alignment="CENTER" layoutX="65.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#openAdmin" opacity="0.54" prefHeight="138.0" prefWidth="179.0" text="REPORT" textOverrun="CLIP">
+         <font>
+            <Font name="PSL Ornanong Pro" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="checkinbtn" alignment="CENTER" layoutX="320.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#openCheckin" opacity="0.54" prefHeight="138.0" prefWidth="179.0" text="CHECK-IN" textOverrun="CLIP" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="485.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PieReportController">
+   <children>
+      <DatePicker fx:id="fromDate" layoutX="171.0" layoutY="49.0" onAction="#handleClicks" prefHeight="27.0" prefWidth="152.0" />
+      <DatePicker fx:id="toDate" layoutX="355.0" layoutY="47.0" onAction="#handleClicks" prefHeight="27.0" prefWidth="134.0" />
+      <Label layoutX="353.0" layoutY="25.0" prefHeight="17.0" prefWidth="64.0" text="To Date" />
+      <Label layoutX="174.0" layoutY="27.0" text="From Date" />
+      <Button fx:id="btnReport" layoutX="532.0" layoutY="44.0" onAction="#handleClicks" prefHeight="26.0" prefWidth="116.0" text="Show Report" />
+      <HBox layoutX="51.0" layoutY="102.0" prefHeight="316.0" prefWidth="722.0">
+         <children>
+            <VBox prefHeight="316.0" prefWidth="362.0">
+               <children>
+                  <PieChart fx:id="pie1" title="Female" />
+               </children>
+            </VBox>
+            <VBox prefHeight="316.0" prefWidth="361.0">
+               <children>
+                  <PieChart fx:id="pie2" title="Male" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

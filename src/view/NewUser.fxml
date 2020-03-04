@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewUserController">
+   <children>
+      <Label layoutX="226.0" layoutY="39.0" text="Student ID:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConfirm" layoutX="192.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleClicks" text="Confirm" />
+      <Label layoutX="28.0" layoutY="82.0" text="         Name:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="39.0" text=" Andrew ID:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="119.0" text="         Gender:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="82.0" text="               Age:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="-7.0" layoutY="188.0" text="               Program:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="-28.0" layoutY="156.0" text="               Nationality:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="-13.0" layoutY="220.0" text="             Start Date:">
+         <font>
+            <Font name="American Typewriter" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="andrewID" layoutX="123.0" layoutY="35.0" prefHeight="27.0" prefWidth="94.0" />
+      <TextField fx:id="studentID" layoutX="321.0" layoutY="35.0" prefHeight="27.0" prefWidth="85.0" />
+      <TextField fx:id="name" layoutX="125.0" layoutY="78.0" prefHeight="27.0" prefWidth="94.0" />
+      <TextField fx:id="age" layoutX="321.0" layoutY="78.0" prefHeight="27.0" prefWidth="85.0" />
+      <MenuButton fx:id="gender" layoutX="125.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="27.0" prefWidth="136.0" text="Please Select">
+        <items>
+          <MenuItem fx:id="male" mnemonicParsing="false" onAction="#handleClicks" text="Male" />
+          <MenuItem fx:id="female" mnemonicParsing="false" onAction="#handleClicks" text="Female" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="nationality" layoutX="125.0" layoutY="152.0" prefHeight="27.0" prefWidth="136.0" />
+      <TextField fx:id="program" layoutX="126.0" layoutY="184.0" prefHeight="27.0" prefWidth="136.0" />
+      <TextField fx:id="startdate" layoutX="126.0" layoutY="216.0" prefHeight="27.0" prefWidth="136.0" />
+   </children>
+</AnchorPane>

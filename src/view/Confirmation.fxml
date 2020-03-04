@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfirmationController">
+   <children>
+      <Label fx:id="lbResultText" layoutX="38.0" layoutY="24.0" text="The visitor is：">
+         <font>
+            <Font name="American Typewriter" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ivPhoto" fitHeight="78.0" fitWidth="78.0" layoutX="65.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/neeko-leung.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="222.0" layoutY="44.0" text="[Current Emotion]">
+         <font>
+            <Font name="American Typewriter" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOperation" layoutX="154.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleClicks" text="Go to Dashboard" />
+      <Label fx:id="lbName" layoutX="57.0" layoutY="141.0" text="Neeko Leung">
+         <font>
+            <Font name="American Typewriter" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbEmotion" layoutX="222.0" layoutY="72.0" prefHeight="39.0" prefWidth="135.0" text="Joy:">
+         <font>
+            <Font name="American Typewriter" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbReasonofVisit" layoutX="35.0" layoutY="192.0" text="Reason of Visiting: ">
+         <font>
+            <Font name="American Typewriter" size="15.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="mbReasonofVisit" layoutX="193.0" layoutY="188.0" mnemonicParsing="false" text="Please select">
+        <items>
+          <MenuItem fx:id="one" mnemonicParsing="false" onAction="#handleClicks" text="Ask for stapler" />
+          <MenuItem fx:id="two" mnemonicParsing="false" onAction="#handleClicks" text="Hand in or collect assignment" />
+            <MenuItem fx:id="three" mnemonicParsing="false" onAction="#handleClicks" text="Meet a faculty" />
+            <MenuItem fx:id="four" mnemonicParsing="false" onAction="#handleClicks" text="Request for locker" />
+            <MenuItem fx:id="five" mnemonicParsing="false" onAction="#handleClicks" text="Chat with Kimberly" />
+            <MenuItem fx:id="six" mnemonicParsing="false" onAction="#handleClicks" text="Complaints" />
+            <MenuItem fx:id="seven" mnemonicParsing="false" onAction="#handleClicks" text="Ask questions (finance)" />
+            <MenuItem fx:id="eight" mnemonicParsing="false" onAction="#handleClicks" text="Ask questions (IT)" />
+            <MenuItem fx:id="nine" mnemonicParsing="false" onAction="#handleClicks" text="Ask questions (marketing)" />
+            <MenuItem fx:id="ten" mnemonicParsing="false" onAction="#handleClicks" text="Ask questions (career service)" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
